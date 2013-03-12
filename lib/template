@@ -1,0 +1,10 @@
+Mode is <%= stats.mode.to_s %>
+Median is <%= stats.median.to_s %>
+Mean is <%= stats.average.to_s('F') %>
+
+<% unless items.blank? %>
+  List of stories:
+  <% items.each do |item| %>
+    <%= item.title %>
+  <% end %>
+<% end %>
